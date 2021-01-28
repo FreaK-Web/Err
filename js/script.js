@@ -1,19 +1,19 @@
-const NumOfFilms = +prompt('Сколько фильмов вы посмотрели?', "");
+const nn = prompt ('Как вас зовут?', ""),
+      first = prompt (`Любой жанр выберите ${nn}`, "") ,
+      second = prompt (`Еще жанр выберите ${nn} пожалуйсто`, "");
 
-const PerMovie = {
-    count : NumOfFilms,
-    movies : {},
-    actors : {},
-    genres : [],
-    privat : false
+const profile = {
+    name : nn,
+    prof : {},
+    genres : []
 };
-const a = prompt('Один из посл просмотренных фильмов ?',"" ),
-      b = prompt('На сколько оцените его?', ""), 
-      c = prompt('Один из посл просмотренных фильмов ?',"" ),
-      d = prompt('На сколько оцените его?', "");
-
- PerMovie.movies[a]= b;
- PerMovie.movies[c]= d;
 
 
-console.log(PerMovie)
+const login = prompt (`Придумайте логин ${nn}`, ""),
+      pass = prompt ('Придумайте пароль', "");  
+
+profile.prof[login] = pass;
+profile.genres[] = first;
+profile.genres[] = second;
+
+console.log(profile);
